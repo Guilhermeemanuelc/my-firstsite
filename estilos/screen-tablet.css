@@ -254,6 +254,7 @@ body.light{
     header {
         display: flex;
         justify-content: space-between;
+        flex-direction: row;
         align-items: center;
         background-color: var(--header-bg);
         z-index: 999;
@@ -275,7 +276,10 @@ body.light{
     }
 
     header button#theme-toggle {
-        transform: translateY(-5px);
+        position: absolute;
+        right: 13px;
+        top: 50%;
+        transform: translateY(-50%);
         font-size: 1.5em;
         cursor: pointer;
         border-radius: 12px;
@@ -306,7 +310,7 @@ body.light{
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        gap: 2vw;
+        gap: 1vw;
         margin: auto;
         height: 100%;
     }
@@ -320,8 +324,9 @@ body.light{
     color: white;
     text-decoration: none;
     padding: 10px 20px;
+    margin-right: 20px;
 
-    background: rgba(10, 15, 28, 0.82);
+    /* background: rgba(10, 15, 28, 0.82); */
 
     border: 1px solid rgba(59, 130, 246, .12);
     border-radius: 10px;
@@ -332,10 +337,10 @@ body.light{
 
     nav div#explorar a:hover {
     transform: rotateX(6px);
-    border: 1px solid rgba(59, 130, 246, .35);
+    border: 2px solid rgba(59, 130, 246, .35);
     background: rgba(18, 30, 55, 0, .95);
     box-shadow: 0 0 20px rgba(37, 99, 235, .15);
-    transition: 1s;
+    transition: 1.2s;
     }
 
     nav div#explorar a:active {

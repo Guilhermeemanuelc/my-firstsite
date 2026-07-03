@@ -5,6 +5,21 @@
     background-size: cover;
 }
 
+header button#theme-toggle {
+    position: absolute;
+    right: calc(4px + 1vw);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    cursor: pointer;
+    border-radius: 12px;
+    width: 35px;
+    height: 35px;
+    background: var(--theme-bg);
+    color: var(--icon);
+    transition: .3s;
+}
+
     section#container div.texto {
     padding-top: 13vw;
     margin-left: 2.5vw;
