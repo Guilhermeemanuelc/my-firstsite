@@ -48,6 +48,19 @@
     --curriculo-texto: #ffffff;
 
 
+    /* Menu burguer  */
+
+
+    --fundomenu: linear-gradient(180deg, #050816 0%, #091224 45%, #0b1730 100%);
+    --bordermenuimagem: rgb(17, 17, 48);
+    --nomemenuh2: rgb(207, 207, 207);
+    --cormenua: white;
+    --cormenufundoa: rgba(10, 15, 28, 0.82);
+    --cormenubordera: rgba(59, 130, 246, .12);
+
+
+
+
     /* Sobre Mim  */
 
     --corh1sobremim: rgb(180, 180, 180);
@@ -136,6 +149,17 @@ body.light{
     --curriculo-active: #e5e7eb;
 
     --curriculo-texto: #111827;
+
+
+        /* Menu burguer  */
+
+
+    --fundomenu: linear-gradient(180deg, #979797 0%, #757575 45%, #a0a0a0 100%);
+    --bordermenuimagem: rgb(175, 175, 175);
+    --nomemenuh2: rgb(26, 26, 26);
+    --cormenua: black;
+    --cormenufundoa: rgba(175, 175, 175, 0.82);
+    --cormenubordera: rgba(167, 200, 253, 0.363);
 
 
     /* Sobre Mim  */
@@ -287,7 +311,7 @@ header > h1 > span {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 22px 150px 45% 100px;
-    background: linear-gradient(180deg, #050816 0%, #091224 45%, #0b1730 100%);
+    background: var(--fundomenu);
     position: fixed;
     top: 0;
     right: -100%;
@@ -362,12 +386,12 @@ nav div#imagem {
     background-position: center;
     width: 55%;
     height: 100px;
-    border: 2px solid rgb(17, 17, 48);
+    border: 2px solid var(--bordermenuimagem);
     border-radius: 50%;
 }
 nav div#nome {
     font-size: 10px;
-    color: rgb(207, 207, 207);
+    color: var(--nomemenuh2);
 }
 
 nav div#explorar {
@@ -394,14 +418,13 @@ nav div#explorar a {
     align-items: center;
     padding: 18px 20px;
     font-size: 13px;
-    color: white;
+    color: var(--cormenua);
     text-decoration: none;
 
-    background: rgba(10, 15, 28, 0.82);
+    background: var(--cormenufundoa);
 
-    border: 1px solid rgba(59, 130, 246, .12);
+    border: 1px solid var(--cormenubordera);
     border-radius: 18px;
-    color: #e5e7eb;
     font-weight: 500;
     transition: .3s ease;
     backdrop-filter: Blur(12px);
